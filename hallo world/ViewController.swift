@@ -9,11 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var showButton: UIButton!
+    @IBOutlet weak var halloLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        halloLabel.isHidden = true
+       
     }
 
 
+    @IBAction func showAction() {
+        if halloLabel.isHidden {
+            halloLabel.isHidden = false
+            showButton.setTitle("put away Text", for: .normal)
+        } else {
+            halloLabel.isHidden = true
+            showButton.setTitle("show Text", for: .normal)
+            
+        }
+        
+    }
+    
+    
 }
 

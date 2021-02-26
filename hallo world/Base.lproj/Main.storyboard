@@ -32,6 +32,9 @@
                                 <state key="normal" title="show Text">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="showAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypi-XZ-zeu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,6 +46,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hua-0D-wgT" secondAttribute="bottom" constant="123" id="rtV-CP-o8C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="halloLabel" destination="ggp-UC-hBU" id="5iy-EJ-j0e"/>
+                        <outlet property="showButton" destination="Hua-0D-wgT" id="MEd-fg-qQm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
